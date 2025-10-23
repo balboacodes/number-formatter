@@ -1,0 +1,40 @@
+{
+    "name": "@balboacodes/number-formatter",
+    "version": "0.1.0",
+    "description": "A TypeScript port of Laravel's number helpers",
+    "keywords": [
+        "laravel",
+        "number",
+        "helper"
+    ],
+    "homepage": "https://github.com/balboacodes/number-formatter#readme",
+    "bugs": {
+        "url": "https://github.com/balboacodes/number-formatter/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/balboacodes/number-formatter.git"
+    },
+    "license": "MIT",
+    "author": "Balboa Codes",
+    "type": "module",
+    "main": "dist/index.js",
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md"
+    ],
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc && vite build",
+        "format": "prettier --write .",
+        "test": "vitest"
+    },
+    "devDependencies": {
+        "prettier": "^3.6.2",
+        "typescript": "^5.9.3",
+        "vite": "^7.1.11",
+        "vite-plugin-dts": "^4.5.4",
+        "vitest": "^3.2.4"
+    }
+}
