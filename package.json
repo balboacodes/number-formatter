@@ -1,6 +1,6 @@
 {
     "name": "@balboacodes/number-formatter",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A TypeScript port of Laravel's number helpers",
     "keywords": [
         "laravel",
@@ -19,12 +19,21 @@
     "author": "Balboa Codes",
     "type": "module",
     "main": "dist/index.js",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
     "files": [
         "dist",
         "LICENSE",
         "README.md"
     ],
     "types": "dist/index.d.ts",
+    "engines": {
+        "node": ">=20"
+    },
     "scripts": {
         "build": "tsc && vite build",
         "format": "prettier --write .",
